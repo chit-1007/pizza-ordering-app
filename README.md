@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# 🍕 Pizza Ordering App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive pizza ordering web application built with React, Redux Toolkit, React Router. Users can browse a menu, add pizzas to their cart, and proceed to checkout—all with a smooth, interactive UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Front Page Welcome:** Enter your name to personalize your experience.
+- ![image](https://github.com/user-attachments/assets/364d027d-1a79-4276-9871-1123465d5057)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Dynamic Menu:** Browse pizzas fetched from a remote API, complete with images, ingredients, and prices.
+![image](https://github.com/user-attachments/assets/65008bd8-275e-4166-a76c-036088ba6a08)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Add to Cart:** Add pizzas to your cart, with real-time updates and a sticky, animated footer cart summary.
+- **Cart Management:** View, remove, or clear items in your cart. See the total price and proceed to checkout.
+- ![image](https://github.com/user-attachments/assets/d5fb1af2-4e64-4c75-9f4c-694d6f874579)
 
-### `npm run build`
+- **Responsive Design:** Fully responsive for desktop, tablet, and mobile devices.
+- **State Management:** Uses Redux Toolkit for cart state and TanStack Query for data fetching.
+- **Routing:** Seamless navigation between pages using React Router.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Redux](https://react-redux.js.org/)
+- [React Router DOM](https://reactrouter.com/)
+- [CSS Flexbox & Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##  Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/<your-username>/pizza-ordering-app.git
+   cd pizza-ordering-app
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Start the development server:**
+   ```sh
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##  Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+  components/
+    Cart.jsx
+    Cart.css
+    Footer.jsx
+    Footer.css
+    FrontPage.jsx
+    FrontPage.css
+    Menu.jsx
+    Menu.css
+  features/
+    cartSlice.js
+  App.js
+  index.js
+  ...
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧑‍💻 Usage
 
-### Analyzing the Bundle Size
+- **Enter your name** on the front page and click "START ORDERING".
+- **Browse the menu** and add pizzas to your cart.
+- **View your cart** by clicking "OPEN CART" in the footer.
+- **Remove items** or clear the cart as needed.
+- **Proceed to checkout** (demo only).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+##  Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Pizza Data:** The menu fetches pizza data from a public gist. You can change the API URL in `Menu.jsx`.
+- **Styling:** All styles are in the `components/*.css` files. Adjust as needed for your brand.
+- **State:** Cart logic is in `features/cartSlice.js`.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+##  Responsive Design
 
-### Deployment
+- The app uses CSS Grid and Flexbox for layouts.
+- Media queries ensure the menu and cart look great on all devices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+##  Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `npm start` — Run the app in development mode.
+- `npm run build` — Build for production.
+- `npm test` — Run tests (if any are added).
+
+---
+
+##  Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+##  License
+
+[MIT](LICENSE)
+
+---
+
+## Acknowledgements
+
+- [Create React App](https://create-react-app.dev/)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Router](https://reactrouter.com/)
+
+---
+
+Enjoy your pizza! 🍕
