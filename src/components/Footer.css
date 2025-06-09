@@ -1,0 +1,56 @@
+.foot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    background: black;
+    z-index: 100;     
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot div{
+    padding: 8px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+.active-foot a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+.foot a:hover{
+    text-decoration: underline;
+}
+
+.active-foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    background: black;
+    z-index: 100;     
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active-foot div{
+    padding: 8px;
+    display: inline;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
